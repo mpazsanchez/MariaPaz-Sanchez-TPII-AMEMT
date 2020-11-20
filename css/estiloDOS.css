@@ -1,0 +1,244 @@
+
+/*-------INDEX-------*/
+
+/*HEADER*/
+/*Contenedor del titulo y del logo*/
+.contenedorLogo {
+    display: flex;
+    justify-content: center;
+    border-bottom: solid rgb(116, 113, 113);
+    border-top: solid rgb(116, 113, 113);
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-right: 0px; 
+
+}
+
+.logo {
+    height: 250px;
+    width: 440px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px; 
+}
+
+.parrafoSubtitulo {
+    font-family: 'Cinzel', serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: white;  
+}
+
+.contenedorSubtitulo {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(44, 43, 46);
+}
+
+
+.encabezado {
+    background-color: white;
+}
+
+.barranav {
+    margin: 4px;
+    
+}
+
+.nav-item:hover {
+ background-color: rgb(44, 43, 46);
+ border-radius: 12px;
+}
+
+
+/*CONTENEDOR*/
+
+/*Carrusel*/
+
+.col-sm-6.carrusel {
+    padding-right: 0px;
+    margin-right: 0px;
+    padding-left: 5px;
+    height: fit-content;
+    width: fit-content;
+  
+}
+
+/*Clima*/
+.col-sm-3.clima {
+    height: fit-content;
+  
+}
+
+.imagenClima {
+    height: max-content;
+    margin-bottom: 18px;
+    transition: 0,7s;
+}
+
+.imagenClima:hover {
+    transform: scale(1.1);
+    border: dotted black 1px;
+}
+
+/*Dolar*/
+.col-sm-3.dolar {
+    height: fit-content ;
+   
+    margin-bottom: 0px;
+}
+
+.imagenDolar {
+    height:max-content;
+    transition: 0,7s;
+}
+
+.imagenDolar:hover {
+    transform: scale(1.1);
+    border: dotted black 1px;
+}
+
+/*TARJETAS*/
+.tituloTarjetas1 {
+    font-size: 20px;
+    color: rgb(56, 51, 51)
+}
+.tituloTarjetas {
+    margin-top: 12px;
+}
+
+/*FOOTER*/
+footer {
+    background-color: rgb(56, 51, 51);
+    color:white;
+    border-bottom:solid rgb(56, 51, 51);
+   
+}
+
+.formu {
+    margin-bottom: 3px;
+    font-size: x-large;
+}
+
+
+.cop {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.redes {
+    text-align: center;
+    font-size: x-large;
+}
+
+.itemsFinal {
+    padding: 2px;
+    justify-content: center;
+}
+
+
+
+
+
+/*-------SECCIONES-------*/
+.sugerencias {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+#noticiaBares, #noticiaAviacion, #noticiaHackers, #noticiaSaludo, #noticiaEjecucionLuchador, #noticiaIFE, #noticiaPeque, 
+#noticiaDolarLiqui, #noticiaImpuestoRiqueza, #noticiaNatiJota, #noticiaCristianSancho {
+    padding-left: 10px;
+    margin-top: 40px;
+    border-bottom: gray solid;
+    padding-top: 10px;
+    width: 70%;
+}
+
+.datos {
+    border: solid black;
+}
+
+
+
+/*Imagenes de noticias*/
+.imagenBares, .imagenIFE, .imagenAvion, .imagenHackers, .imagenPeque, .imagenCristianSancho, .imagenNatiJota, .imagenDolarLiqui, .imagenImpuestoRiqueza,
+.imagenSaludo, .imagenLuchador
+{
+    width: 100%;
+    height: 120%;
+}
+
+
+/* Encabezados de noticias - h1 */
+/*Encabezados Argentina*/
+#noticiaIFE>h1 {
+    font-size: 200%;
+}
+#noticiaBares>h1 {
+    font-size: 200%;
+}
+#noticiaAviacion>h1 {
+    font-size: 200%;
+}
+#noticiaHackers>h1 {
+    font-size: 200%;
+}
+
+/*Encabezados deportes*/
+#noticiaPeque>h1 {
+    font-size: 200%;
+}
+
+/*Encabezados entretenimiento*/
+#noticiaCristianSancho>h1 {
+    font-size: 200%;
+}
+
+#noticiaNatiJota>h1 {
+    font-size: 200%;
+}
+
+/*Encabezados finanzas*/
+#noticiaDolarLiqui>h1 {
+    font-size: 200%;
+}
+#noticiaImpuestoRiqueza>h1 {
+    font-size: 200%;
+}
+
+/*Encabezados mundo*/
+#noticiaSaludo>h1 {
+    font-size: 200%;
+}
+#noticiaEjecucionLuchador>h1 {
+    font-size: 200%;
+}
+
+
+/*Color etiqueta a*/
+a {color: black; 
+        text-decoration: none;}
+
+.etiquetaA {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/*-------SECCION Footer-------*/
+#formularioContacto, #diarioImpreso, #terminos {
+   border-bottom: gray solid 1px;
+   margin: 10px;
+   margin-top: 3%;
+  
+}
+
+
+.localidad  {
+    margin-top: 15px;
+}
+
+
