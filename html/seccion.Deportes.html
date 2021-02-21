@@ -8,8 +8,8 @@
   
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/estiloDOS.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../assets/bootstrap.min.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../assets/bootstrap-grid.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../assets/Descargas de bootstrap/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../assets/Descargas de bootstrap/bootstrap-grid.min.css'>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
    
@@ -18,8 +18,6 @@
 
 <!-- -------BODY------- -->
 <body>
-  <div class="pruebaRama">ESTOY PROBANDO SI ME SALE MODIFICAR LA RAMA</div>
-  
   <div class="encabezado" >
 <!-- --Header-- -->
 <header>
@@ -27,7 +25,7 @@
     <div class="contenedorLogo">
 
     <div class="logo">
-        <img src="../assets/logotig2.png" alt="Logo del diario La republica" class="logo">
+        <img src="../assets/Logos/logotig2.png" alt="Logo del diario La republica" class="logo">
     </div>
 
     </div>
@@ -48,22 +46,22 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item itemBarra">
-                    <a class="nav-link" href="C:\Users\PC\Documents\Programacion web\Amemt\Tarea\Trabajo practico\html\indexDOS.html">Pagina principal<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./indexDOS.html">Pagina principal<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item itemBarra">
-                    <a class="nav-link" href="C:\Users\PC\Documents\Programacion web\Amemt\Tarea\Trabajo practico\html\seccionArgentina.html">Argentina</a>
+                    <a class="nav-link" href="./seccionArgentina.html">Argentina</a>
                   </li>
                   <li class="nav-item itemBarra">
-                    <a class="nav-link" href="C:\Users\PC\Documents\Programacion web\Amemt\Tarea\Trabajo practico\html\seccionMundo.html">Mundo</a>
+                    <a class="nav-link" href="./seccionMundo.html">Mundo</a>
                   </li>
                   <li class="nav-item itemBarra">
-                      <a class="nav-link" href="C:\Users\PC\Documents\Programacion web\Amemt\Tarea\Trabajo practico\html\seccionEntretenimiento.html">Entretenimiento</a>
+                      <a class="nav-link" href="./seccionEntretenimiento.html">Entretenimiento</a>
                   </li>
                   <li class="nav-item active itemBarra">
-                      <a class="nav-link" href="C:\Users\PC\Documents\Programacion web\Amemt\Tarea\Trabajo practico\html\seccion.Deportes.html">Deportes</a>
+                      <a class="nav-link" href="./seccion.Deportes.html">Deportes</a>
                   </li>
                   <li class="nav-item itemBarra">
-                      <a class="nav-link" href="C:\Users\PC\Documents\Programacion web\Amemt\Tarea\Trabajo practico\html\seccionFinanzas.html">Finanzas</a>
+                      <a class="nav-link" href="./seccionFinanzas.html">Finanzas</a>
                     </li>
 
 
@@ -87,7 +85,7 @@
 <div id="noticiaPeque">
   <h1>Diego Schwartzman logró un histórico triunfo ante Rafael Nadal y se clasificó a las semifinales del Masters 1000 de Roma</h1>
   <p>A puro mérito y después de nueve caídas consecutivas ante el español, “El Peque” derrotó 6-2 y 7-5 al nueve veces campeón de este torneo y actual defensor de la corona</p>
-    <img class="imagenPeque" src="../assets/peque.jpg" alt="Diego Schwartzman jugando al tenis">
+    <img class="imagenPeque" src="../assets/Imagenes/peque.jpg" alt="Diego Schwartzman jugando al tenis">
   <p>Diego Schwartzman logró un triunfo histórico ante Rafael Nadal en el Masters 1000 de Roma: se impuso por 6-2 y 7-5 y logró el boleto a las semifinales del certamen italiano. Es la primera vez que se impone ante el español en su carrera tras perder en otras nueve ocasiones.</p>
   <p>El argentino se quedó con el primer set con un 6-2 gracias a un rendimiento sólido y con un dato estadístico que grafica su nivel: el primer quiebre que realizó del saque del español lo hizo con un 0-40. En total, doblegó el servicio de Nadal en dos oportunidades durante ese parcial y levantó un break en contra cuando estaba 1-2 abajo en el inicio del juego.
     El segundo set lo comenzó con dos chances de quiebre, pero allí no pudo hacer demasiado y Nadal arrancó ganando. La muestra de carácter la dio en el game siguiente al levantar un break en contra para nivelar el inicio en un 1-1. Si bien el máximo exponente del tenis argentino logró otro quiebre que le permitió pasar al frente, Rafa se repuso rápidamente para poner 4-4 el segundo parcial.
@@ -96,7 +94,164 @@
   </p>
 
 
+
+<!-- -------------------- <<<<<<<<<< FILTROS >>>>>>>>>> -------------------- -->
+    <select class="form-select form-select-lg mb-3" id="select-js" aria-label="select">
+        <option selected>Filtros</option>
+        <option value="1" class="mayoresPuntajes">Mayores puntajes</option>
+        <option value="2" class="menoresPuntajes">Menores puntajes</option>
+        <option value="3" class="mejoresRanking">Mejores del ranking mundial</option>
+    </select>
+
+    <button id="btn-filtrar">Filtrar</button>
+
+
+    <!-- -------------------- <<<<<<<<<< TABLA >>>>>>>>>> -------------------- -->
+    <table id="table" class="table">
+
+    </table>
+
+
 </div>
+
+
+
+    <!-- -------------------- <<<<<<<<<< MODAL - BOOTSTRAP >>>>>>>>>> -------------------- -->
+
+    <!-- -------------------- <<<<<<<<<< MODAL EDITAR >>>>>>>>>> -------------------- -->
+    <div class="modal fade" id="miModalEditar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                    <h4 class="modal-title" id="myModalLabel">Editar jugador</h4>
+                </div>
+
+                <div class="modal-body">
+                    Modifique los campos que desea editar
+                </div>
+                <div class="inputs">
+                    <input type="text" id="editarApellido">
+                    <input type="text" id="editarRanking">
+                    <input type="text" id="editarPuntaje">
+                    <input type="text" id="editarPuesto">
+                </div>
+                
+                <!--Progress bar-->
+                <div class="progress progress-hidden" id="progress-agregar-id">
+
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+                        <p>Cargando...</p>
+                    </div>
+
+                </div>
+
+                
+
+                <div class="btn-container-modal">
+                    <button type="button" data-dismiss="modal" id="btn-editar-aceptar" class="btn-modal-all">Aceptar</button>
+                    <button type="button" data-dismiss="modal" id="btn-editar-cancelar" class="btn-modal-all">Cancelar</button>
+                </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- -------------------- <<<<<<<<<< MODAL AGREGAR >>>>>>>>>> -------------------- -->
+    <div class="modal fade" id="miModalAgregar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Agregar jugador</h4>
+                </div>
+
+                <div class="modal-body">
+                    Complete los campos para agregar un jugador
+                </div>
+
+                <form class="inputs">
+
+                    <input type="text" placeholder="Ingrese apellido" id="apellido">
+                    <input type="text" placeholder="Ingrese el puesto del ranking" id="puestoRanking">
+                    <input type="text" placeholder="Ingrese el puntaje" id="puntaje">
+                    <input type="text" placeholder="Ingrese el puesto" id="puestoTorneo">
+                </form>
+
+                <!--Progress bar-->
+                <div class="progress progress-hidden" id="progress-editar-id">
+
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+                        <p>Cargando...</p>
+                    </div>
+
+                </div>
+
+                <div class="btn-container-modal">
+                    <button type="button" data-dismiss="modal" id="btn-agregar-aceptar" class="btn-modal-all">Aceptar</button>
+
+                    <button type="button" data-dismiss="modal" id="btn-agregar-cancelar" class="btn-modal-all">Cancelar</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------- <<<<<<<<<< MODAL ELIMINAR >>>>>>>>>> -------------------- -->
+    <div class="modal fade" id="miModalEliminar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Eliminar jugador</h4>
+                </div>
+
+                <div class="modal-body">
+                    ¿Desea eliminar el jugador seleccionado?
+                </div>
+                <!-- BOTONES DEL MODAL -->
+                <div class="btn-container-modal">
+                    <button type="button" data-dismiss="modal" id='btn-eliminar-aceptar' class="btn-modal-all">Aceptar</button>
+                    <button type="button" data-dismiss="modal" id='btn-eliminar-cancelar' class="btn-modal-all">Cancelar</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             </div>
           </div>
@@ -108,8 +263,8 @@
 <div class="sugerencias">
   <ul> <h5>Noticias más leídas</h5> </ul>
        
-  <a href="C:\Users\PC\Documents\Programacion web\Amemt\Tarea\Trabajo practico\html\seccionArgentina.html#noticiaHackers"><li>El ingreso ilegal de ciudadanos chinos, en los archivos que los hackers robaron a Migraciones</li> </a>
-  <a href="C:\Users\PC\Documents\Programacion web\Amemt\Tarea\Trabajo practico\html\seccionMundo.html#noticiaEjecucionLuchador"><li>El Comité Olímpico Internacional, “conmocionado” por la ejecución del luchador iraní Navid Afkari</li> </a>
+  <a href="./seccionArgentina.html#noticiaHackers"><li>El ingreso ilegal de ciudadanos chinos, en los archivos que los hackers robaron a Migraciones</li> </a>
+  <a href="./seccionMundo.html#noticiaEjecucionLuchador"><li>El Comité Olímpico Internacional, “conmocionado” por la ejecución del luchador iraní Navid Afkari</li> </a>
 
 </div>
 
@@ -150,22 +305,22 @@
   <div class="row itemsFinal">
 
     <div class="col-sm col col-lg col-md">
-              <a class="etiquetaA" href="C:\Users\PC\Documents\Programacion web\Amemt\Tarea\Trabajo practico\html\Footer.html#formularioContacto">Contacto</a>
+              <a class="etiquetaA" href="./Footer.html#formularioContacto">Contacto</a>
     </div>
 
     
     <div class="col-sm col col-lg col-md">
-      <a class="etiquetaA" href="C:\Users\PC\Documents\Programacion web\Amemt\Tarea\Trabajo practico\html\Footer.html#terminos">Terminos y condiciones</a>
+      <a class="etiquetaA" href="./Footer.html#terminos">Terminos y condiciones</a>
       
     </div>
 
     <div class="col-sm col col-lg col-md">
-      <a class="etiquetaA" href="C:\Users\PC\Documents\Programacion web\Amemt\Tarea\Trabajo practico\html\Footer.html#diarioImpreso">Suscribirse al diario impreso</a>
+      <a class="etiquetaA" href="./Footer.html#diarioImpreso">Suscribirse al diario impreso</a>
       
     </div>
 
     <div class="col-sm col col-lg col-md">
-      <a class="etiquetaA" href="C:\Users\PC\Documents\Programacion web\Amemt\Tarea\Trabajo practico\html\Footer.html#newsletter">Suscribirse al newsletter</a>
+      <a class="etiquetaA" href="./Footer.html#newsletter">Suscribirse al newsletter</a>
    
     </div>
 
@@ -183,6 +338,9 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="../javascript/javascript.js"></script>
+
 
 </body>
 </html>
