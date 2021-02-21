@@ -242,3 +242,26 @@ a {color: black;
 }
 
 
+/*-------ESTILO TABLA DINAMICA Y MODAL-------*/
+.progress-hidden {
+    display:none;
+}
+
+.modal-header {
+    background: rgb(211, 207, 207);
+    text-align: center;
+    color: rgb(60, 56, 56);
+}
+
+.btn-modal-all {
+    padding: 8px;
+    margin: 10px;
+    font-weight: bold;
+    
+}
+
+.btn-container-modal {
+    display: flex;
+    justify-content: center;
+}
+
